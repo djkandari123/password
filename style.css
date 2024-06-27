@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+}
+.wrapper{
+    margin-top: 30px;
+    width: 300px;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+.password_box{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.password_box .result{
+    flex: 1;
+    padding: 10px;
+}
+.password_box .copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.options .checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.checkbox label{
+    flex: 1;
+    font-size: 18px;
+    cursor: pointer;
+}
+.checkbox input[type="number"]{
+    width: 50px;
+    padding:3px;
+}
+.checkbox input[type="checkbox"]{
+    accent-color: blueviolet;
+    cursor: pointer;
+}
+.wrapper .btn{
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 0%;
+    border: none;
+    cursor: pointer;
+}
+#msg{
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(67, 239, 67);
+    color: white;
+    text-align: center;
+    display: none;
+    font-weight: bold;
+}
